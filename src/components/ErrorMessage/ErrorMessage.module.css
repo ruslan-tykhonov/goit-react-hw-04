@@ -1,5 +1,5 @@
 .error {
-  font-weight: 600;
+  font-style: italic;
+  margin: 0 auto;
   text-align: center;
-  color: #ff0000;
 }

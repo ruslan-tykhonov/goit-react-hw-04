@@ -1,6 +1,7 @@
-.image {
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
-  object-position: center;
+.item {
+  height: 260px;
+}
+
+.img {
+  max-width: 360px;
 }

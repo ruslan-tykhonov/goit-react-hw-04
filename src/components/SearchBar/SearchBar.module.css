@@ -1,43 +1,47 @@
 .header {
-  background-color: #38964f;
-  padding: 24px;
-  display: flex;
-  justify-content: center;
+  background-color: rgb(71, 71, 255);
+  padding: 15px;
   margin-bottom: 24px;
 }
 
 .form {
-  display: flex;
-  gap: 24px;
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.inputwrap {
+  position: relative;
+}
+
+.btn {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  transform: (translateY(20%));
+  top: 20%;
+  left: 5px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.2);
 }
 
 .input {
+  height: 30px;
+  min-width: 320px;
+  background-color: rgb(239, 243, 247);
   border: none;
-  outline: none;
-  font-family: "Roboto Mono", serif;
+  border-radius: 10px;
   font-size: 16px;
-  padding: 4px;
-  width: 360px;
-  border-radius: 4px;
-  transition: border 300ms ease-in-out;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: #2e2f42;
+  padding-left: 40px;
 }
 
-.input:focus {
-  border: 2px solid #71de8c;
-}
-
-.searchButton {
-  width: 98px;
-  font-size: 16px;
-  padding: 4px;
-  background-color: #e6ee5c;
-  border: none;
-  border-radius: 4px;
-  transition: background-color 300ms ease-in-out, font-weight 300ms ease-in-out;
-}
-
-.searchButton:hover,
-.searchButton:focus {
-  background-color: #71de8c;
-  font-weight: 600;
+.input::placeholder {
+  font-style: italic;
 }

@@ -1,14 +1,9 @@
-import css from "./ImageCard.module.css";
+import s from "./ImageCard.module.css";
 
-export default function ImageCard({ picture, onClick }) {
+export default function ImageCard({ data }) {
   return (
-    <div>
-      <img
-        src={picture.urls.small}
-        alt={picture.alt_description || "No description"}
-        onClick={() => onClick(picture)}
-        className={css.image}
-      />
+    <div className={s.item}>
+      <img src={data.urls.small} alt={data.description} className={s.img} />
     </div>
   );
 }
